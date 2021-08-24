@@ -1,0 +1,85 @@
+.audio-player {
+  .rhap_container {
+    margin-bottom: 30px;
+    box-shadow: none;
+    background-color: #E8EEF4;
+
+    .rhap_progress-section {
+      display: none;
+    }
+    .rhap_controls-section {
+      margin: 0;
+      .rhap_additional-controls {
+        display: none;
+      }
+      .rhap_volume-controls {
+        display: none;
+      }
+    }
+
+    .rhap_main-controls {
+      .rhap_rewind-button {
+        display: none;
+      }
+      .rhap_forward-button {
+        display: none;
+      }
+      .rhap_play-pause-button {
+        color: #2792f7;
+        outline: none;
+        margin-left: 35px;
+      }
+    }
+  }
+  .controls {
+    .forward-button,
+    .rewind-button,
+    .speed-input,
+    .share-image {
+      position: absolute;
+      cursor: pointer;
+    }
+    .forward-image,
+    .rewind-image {
+      width: 16px;
+    }
+    .forward-button {
+      top: 22px;
+      left: 97px;
+    }
+    .rewind-button {
+      top: 22px;
+      left: 26px;
+    }
+
+    .speed-input {
+      outline: none;
+      font-weight: 600;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      font-size: 12px;
+      background-color: white;
+      top: 19px;
+      left: 130px;
+      border-radius: 100px;
+      border: 1px solid #e3e7e8;
+      padding: 2px 8px;
+      text-overflow: "";
+      color: #5D6A7E;
+      line-height: 16px;
+    }
+    .share-image {
+      top: 15px;
+      right: 30px;
+    }
+  }
+  .duration {
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #E8EEF4;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}

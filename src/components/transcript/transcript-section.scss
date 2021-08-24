@@ -1,0 +1,50 @@
+.transcripts {
+  .section {
+    padding: 16px 20px;
+    display: flex;
+    &:hover{
+      background-color: #EDF7FF;
+    }
+    .transcript-time {
+      margin-right: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .divider {
+      border-left: 2px solid;
+      height: auto;
+    }
+    .transcript-words {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #5D6A7E;
+      margin-left: 10px;
+      word-spacing: 3px;
+      .word:hover {
+        span {
+          background-color: #bbe1fa;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+      }
+      .share-button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 12px;
+        padding: 0 .25ch;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0b77c6;
+        display: none;
+      }
+    }
+    &:hover{
+      .share-button {
+        display: block;
+      }
+      }
+  }
+}

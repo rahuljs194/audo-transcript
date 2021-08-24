@@ -1,0 +1,71 @@
+.wave-section {
+  position: relative;
+  padding: 20px;
+
+  .waveform-row {
+    display: flex;
+    .waveform-name {
+      font-weight: 700;
+      text-transform: uppercase;
+      width: 160px;
+      -webkit-flex-shrink: 0;
+      flex-shrink: 0;
+      -webkit-align-items: flex-end;
+      align-items: flex-end;
+      padding: 8px 0;
+    }
+    .first-person {
+      color: #02c797;
+    }
+    .second-person {
+      color: #1991eb;
+    }
+    .waveform-container {
+      display: flex;
+      width: 100%;
+      .waves-first-person {
+        background: repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 1px,
+          #02c797 0px,
+          #ccc 3px
+        );
+      }
+      .waves-second-person {
+        background: repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 1px,
+          #1991eb 0px,
+          #ccc 3px
+        );
+      }
+    }
+  }
+
+  .break-line {
+    display: flex;
+    .inactive-line {
+      border-top: 1px solid #d3dae3;
+      width: 160px;
+      margin: 8px 0;
+    }
+    .breaker {
+      height: 12px;
+      border-left: 1px solid #d3dae3;
+      padding-top: 4px;
+    }
+    .active-line {
+      width: calc(100% - 160px);
+      margin: 8px 0;
+      display: flex;
+      .bold-line {
+        border-top: 1px solid #949FB1;
+      }
+      .normal-line {
+        border-top: 1px solid #d3dae3;
+      }
+    }
+  }
+}
